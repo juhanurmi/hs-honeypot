@@ -35,6 +35,9 @@ Furthermore, you can follow Hidden Service directories that these HSs are using.
 
 ```sh
 $ python hsdir_logger.py
+Tor is running version 0.2.5.9-rc (git-ec6adfb30fe8637b)
+2014-10-22 14:09:59 : Action: REQUESTED, address: igt7jva3cko2wfav, directory: $50E1DE9D8A47B3507646E590EAFDFEB94A48FD4C~binar20140514, directory_fingerprint: 50E1DE9D8A47B3507646E590EAFDFEB94A48FD4C, directory_nickname: binar20140514, descriptor_id: kdct2pzz2jiaenvb5ga2emzg2fjskyta
+2014-10-22 14:10:00 : Action: RECEIVED, address: igt7jva3cko2wfav, directory: $50E1DE9D8A47B3507646E590EAFDFEB94A48FD4C~binar20140514, directory_fingerprint: 50E1DE9D8A47B3507646E590EAFDFEB94A48FD4C, directory_nickname: binar20140514, descriptor_id: None
 ```
 
 You can follow possible TCP traffic to selected ports.

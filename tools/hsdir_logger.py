@@ -7,8 +7,9 @@ from stem.control import Controller, EventType
 
 def print_hsdesc(event):
     """Print HS_DESC event's variables."""
-    print datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    print 'Action: %i, address: %i, directory: %i, directory_fingerprint: %i, directory_nickname: %i, descriptor_id: %i' % (event.action, event.address, event.directory, event.directory_fingerprint, event.directory_nickname, event.descriptor_id)
+    time_str = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    action_str = 'Action: %s, address: %s, directory: %s, directory_fingerprint: %s, directory_nickname: %s, descriptor_id: %s' % (str(event.action), str(event.address), str(event.directory), str(event.directory_fingerprint), str(event.directory_nickname), str(event.descriptor_id))
+    print time_str + " : " + action_str
 
 if __name__ == '__main__':
     with Controller.from_port(port = 9051) as controller:
