@@ -6,7 +6,7 @@ This is a simple way to build honeypot system. These scripts deploy hidden servi
 Tutorial
 --------
 
-- Install Tor
+- Install Tor (Latest version from the Tor Project repository)
 - Generate torrc configuration for Tor
 
 ```sh
@@ -29,6 +29,12 @@ Finally, restart the services and your logging systems is ready.
 ```sh
 $ service nginx restart
 $ service tor restart
+```
+
+Furthermore, you can follow Hidden Service directories that these HSs are using. Install Stem from GitHub sources. Stem is a Python controller library for Tor. Like its predecessor, TorCtl, it uses Tor's control protocol to help developers program against the Tor process
+
+```sh
+$ python hsdir_logger.py
 ```
 
 You can follow possible TCP traffic to selected ports.

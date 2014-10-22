@@ -1,6 +1,5 @@
 """Follow HS directory events."""
 
-import time
 from datetime import datetime
 
 from stem.control import Controller, EventType
@@ -16,4 +15,4 @@ if __name__ == '__main__':
         controller.authenticate() # provide the password here if you set one
         print 'Tor is running version %s' % controller.get_version()
         controller.add_event_listener(print_hsdesc, EventType.HS_DESC)
-        time.sleep(60*60*24*30)
+        raw_input()  # wait for user to press enter
