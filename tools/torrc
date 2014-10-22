@@ -1,0 +1,65 @@
+SocksPolicy accept 10.8.0.0/24
+SocksPolicy accept 127.0.0.0/8
+
+ControlPort 9051
+
+# Hidden Service 000
+HiddenServiceDir /var/lib/tor/hss/hidden_service_000/
+HiddenServicePort 21 127.0.0.1:10021
+HiddenServicePort 22 127.0.0.1:10022
+HiddenServicePort 80 127.0.0.1:10080
+
+# Hidden Service 001
+HiddenServiceDir /var/lib/tor/hss/hidden_service_001/
+HiddenServicePort 21 127.0.0.1:10121
+HiddenServicePort 22 127.0.0.1:10122
+HiddenServicePort 80 127.0.0.1:10180
+
+# Hidden Service 002
+HiddenServiceDir /var/lib/tor/hss/hidden_service_002/
+HiddenServicePort 21 127.0.0.1:10221
+HiddenServicePort 22 127.0.0.1:10222
+HiddenServicePort 80 127.0.0.1:10280
+
+# Hidden Service 003
+HiddenServiceDir /var/lib/tor/hss/hidden_service_003/
+HiddenServicePort 21 127.0.0.1:10321
+HiddenServicePort 22 127.0.0.1:10322
+HiddenServicePort 80 127.0.0.1:10380
+
+# Hidden Service 004
+HiddenServiceDir /var/lib/tor/hss/hidden_service_004/
+HiddenServicePort 21 127.0.0.1:10421
+HiddenServicePort 22 127.0.0.1:10422
+HiddenServicePort 80 127.0.0.1:10480
+
+# Hidden Service 005
+HiddenServiceDir /var/lib/tor/hss/hidden_service_005/
+HiddenServicePort 21 127.0.0.1:10521
+HiddenServicePort 22 127.0.0.1:10522
+HiddenServicePort 80 127.0.0.1:10580
+
+# Hidden Service 006
+HiddenServiceDir /var/lib/tor/hss/hidden_service_006/
+HiddenServicePort 21 127.0.0.1:10621
+HiddenServicePort 22 127.0.0.1:10622
+HiddenServicePort 80 127.0.0.1:10680
+
+# Hidden Service 007
+HiddenServiceDir /var/lib/tor/hss/hidden_service_007/
+HiddenServicePort 21 127.0.0.1:10721
+HiddenServicePort 22 127.0.0.1:10722
+HiddenServicePort 80 127.0.0.1:10780
+
+# Hidden Service 008
+HiddenServiceDir /var/lib/tor/hss/hidden_service_008/
+HiddenServicePort 21 127.0.0.1:10821
+HiddenServicePort 22 127.0.0.1:10822
+HiddenServicePort 80 127.0.0.1:10880
+
+# Hidden Service 009
+HiddenServiceDir /var/lib/tor/hss/hidden_service_009/
+HiddenServicePort 21 127.0.0.1:10921
+HiddenServicePort 22 127.0.0.1:10922
+HiddenServicePort 80 127.0.0.1:10980
+

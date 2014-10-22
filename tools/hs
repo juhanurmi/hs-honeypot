@@ -1,0 +1,144 @@
+log_format mycustomformat '$host $remote_addr - $remote_user [$time_local] "$request" '
+                  '$status $body_bytes_sent "$http_referer" '
+                  '"$http_user_agent" $server_port';
+
+server {
+	listen 127.0.0.1:10021;
+	listen 127.0.0.1:10022;
+	listen 127.0.0.1:10080;
+	root /usr/share/nginx/html;
+	index index.html index.htm;
+	server_name 000;
+	access_log /var/log/nginx/hs_logs/000.access mycustomformat;
+	location / {
+		try_files $uri $uri/ =404;
+	}
+	error_log /var/log/nginx/hs_logs/000.error error;
+}
+
+server {
+	listen 127.0.0.1:10121;
+	listen 127.0.0.1:10122;
+	listen 127.0.0.1:10180;
+	root /usr/share/nginx/html;
+	index index.html index.htm;
+	server_name 001;
+	access_log /var/log/nginx/hs_logs/001.access mycustomformat;
+	location / {
+		try_files $uri $uri/ =404;
+	}
+	error_log /var/log/nginx/hs_logs/001.error error;
+}
+
+server {
+	listen 127.0.0.1:10221;
+	listen 127.0.0.1:10222;
+	listen 127.0.0.1:10280;
+	root /usr/share/nginx/html;
+	index index.html index.htm;
+	server_name 002;
+	access_log /var/log/nginx/hs_logs/002.access mycustomformat;
+	location / {
+		try_files $uri $uri/ =404;
+	}
+	error_log /var/log/nginx/hs_logs/002.error error;
+}
+
+server {
+	listen 127.0.0.1:10321;
+	listen 127.0.0.1:10322;
+	listen 127.0.0.1:10380;
+	root /usr/share/nginx/html;
+	index index.html index.htm;
+	server_name 003;
+	access_log /var/log/nginx/hs_logs/003.access mycustomformat;
+	location / {
+		try_files $uri $uri/ =404;
+	}
+	error_log /var/log/nginx/hs_logs/003.error error;
+}
+
+server {
+	listen 127.0.0.1:10421;
+	listen 127.0.0.1:10422;
+	listen 127.0.0.1:10480;
+	root /usr/share/nginx/html;
+	index index.html index.htm;
+	server_name 004;
+	access_log /var/log/nginx/hs_logs/004.access mycustomformat;
+	location / {
+		try_files $uri $uri/ =404;
+	}
+	error_log /var/log/nginx/hs_logs/004.error error;
+}
+
+server {
+	listen 127.0.0.1:10521;
+	listen 127.0.0.1:10522;
+	listen 127.0.0.1:10580;
+	root /usr/share/nginx/html;
+	index index.html index.htm;
+	server_name 005;
+	access_log /var/log/nginx/hs_logs/005.access mycustomformat;
+	location / {
+		try_files $uri $uri/ =404;
+	}
+	error_log /var/log/nginx/hs_logs/005.error error;
+}
+
+server {
+	listen 127.0.0.1:10621;
+	listen 127.0.0.1:10622;
+	listen 127.0.0.1:10680;
+	root /usr/share/nginx/html;
+	index index.html index.htm;
+	server_name 006;
+	access_log /var/log/nginx/hs_logs/006.access mycustomformat;
+	location / {
+		try_files $uri $uri/ =404;
+	}
+	error_log /var/log/nginx/hs_logs/006.error error;
+}
+
+server {
+	listen 127.0.0.1:10721;
+	listen 127.0.0.1:10722;
+	listen 127.0.0.1:10780;
+	root /usr/share/nginx/html;
+	index index.html index.htm;
+	server_name 007;
+	access_log /var/log/nginx/hs_logs/007.access mycustomformat;
+	location / {
+		try_files $uri $uri/ =404;
+	}
+	error_log /var/log/nginx/hs_logs/007.error error;
+}
+
+server {
+	listen 127.0.0.1:10821;
+	listen 127.0.0.1:10822;
+	listen 127.0.0.1:10880;
+	root /usr/share/nginx/html;
+	index index.html index.htm;
+	server_name 008;
+	access_log /var/log/nginx/hs_logs/008.access mycustomformat;
+	location / {
+		try_files $uri $uri/ =404;
+	}
+	error_log /var/log/nginx/hs_logs/008.error error;
+}
+
+server {
+	listen 127.0.0.1:10921;
+	listen 127.0.0.1:10922;
+	listen 127.0.0.1:10980;
+	root /usr/share/nginx/html;
+	index index.html index.htm;
+	server_name 009;
+	access_log /var/log/nginx/hs_logs/009.access mycustomformat;
+	location / {
+		try_files $uri $uri/ =404;
+	}
+	error_log /var/log/nginx/hs_logs/009.error error;
+}
+
