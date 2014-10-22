@@ -16,8 +16,8 @@ def main():
     torrc_conf = "SocksPolicy accept 10.8.0.0/24\n"
     torrc_conf = torrc_conf + "SocksPolicy accept 127.0.0.0/8\n\n"
     torrc_conf = torrc_conf + "ControlPort 9051\n\n"
-    for id_num in range(0,10):
-        id_str = str(id_num).zfill(3)
+    for id_num in range(0,100):
+        id_str = str(id_num).zfill(6)
         torrc_conf = torrc_conf + "# Hidden Service " + id_str + "\n"
         torrc_conf = torrc_conf + "HiddenServiceDir " + FILE_PATH + "hidden_service_" + id_str + "/\n"
         torrc_conf = torrc_conf + "HiddenServicePort 21 127.0.0.1:" + str(port+21) + "\n"

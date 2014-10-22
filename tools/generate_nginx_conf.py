@@ -15,9 +15,9 @@ def main():
     nginx_conf = """log_format mycustomformat '$host $remote_addr - $remote_user [$time_local] "$request" '
                   '$status $body_bytes_sent "$http_referer" '
                   '"$http_user_agent" $server_port';\n\n"""
-    for id_num in range(0,10):
+    for id_num in range(0,100):
         nginx_conf = nginx_conf + "server {\n"
-        id_str = str(id_num).zfill(3)
+        id_str = str(id_num).zfill(6)
         nginx_conf = nginx_conf + "\tlisten 127.0.0.1:" + str(port+21) + ";\n"
         nginx_conf = nginx_conf + "\tlisten 127.0.0.1:" + str(port+22) + ";\n"
         nginx_conf = nginx_conf + "\tlisten 127.0.0.1:" + str(port+80) + ";\n"
