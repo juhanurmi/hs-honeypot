@@ -3,6 +3,9 @@ SocksPolicy accept 127.0.0.0/8
 
 ControlPort 9051
 
+Log debug file /var/lib/tor/debugtor.log
+SafeLogging 0
+
 # Hidden Service 000000
 HiddenServiceDir /var/lib/tor/hss/hidden_service_000000/
 HiddenServicePort 21 127.0.0.1:10021
