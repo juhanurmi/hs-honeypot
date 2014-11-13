@@ -16,8 +16,6 @@ def main():
     torrc_conf = "SocksPolicy accept 10.8.0.0/24\n"
     torrc_conf = torrc_conf + "SocksPolicy accept 127.0.0.0/8\n\n"
     torrc_conf = torrc_conf + "ControlPort 9051\n\n"
-    torrc_conf = torrc_conf + "Log debug file /var/lib/tor/debugtor.log\n"
-    torrc_conf = torrc_conf + "SafeLogging 0\n\n"
     text2file( torrc_conf, "torrc")
     torrc_conf = ""
     for id_num in range(0,100):
